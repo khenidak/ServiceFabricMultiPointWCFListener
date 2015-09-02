@@ -6,12 +6,19 @@ Service Fabric out of the box uses WCF Listeners that support 1:1:1 mapping betw
 
 ## At a Glance: What can you do with this component ##
 1- Map multiple Wcf endpoints/contracts/hosts to a single replica. 
+
 2- Migrate Wcf Services as-is to Service Fabric based hosting. 
+
 3- Migrate Wcf Services (and use Service Fabric State) in them. 
+
 4- Control over how listening address are created.
+
 5- control over how bindings are assigned. 
+
 6- Control over Wcf Hosts, Wcf Endpoints as they are being created. to add behaviors, dispatchers etc..
+
 7- Support for ICommunicationXXXX Service Fabric interfaces which recycles Wcf channels between callers. Maximum of 1 channel type per host/per endpoint is created at any single time.
+
 8- The service fabric client implementation implements disposable pattern and will abort all open Wcf channels upon Dispose or GC.
 
 ##Typical Usage Pattern (Service Side): Wcf as-is (not using Service Fabric State)##
