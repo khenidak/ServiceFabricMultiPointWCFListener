@@ -2,7 +2,7 @@
 
 This repo contains the components necessary to enable Service Fabric to listen to (on a single servicer ) to multiple WCF endpoints (shared among a configurable number of WCF Hosts). 
 
-Service Fabric out of the box uses WCF Listeners that support 1:1:1 mapping between Replica, Wcf Host & Wcf Endpoint and you should them. The components in this repo comes in play if this mapping does not work with you. For example services that uses multi-contracts, multi-endpoints or multi-endpoints. 
+Service Fabric out of the box uses WCF Listeners that support 1:1:1 mapping between Replica, Wcf Host & Wcf Endpoint and you should them. The components in this repo comes in play if this mapping does not work with you. For example services that uses multi-contracts, multi-endpoints or multi-hosts. 
 
 ## At a Glance: What can you do with this component ##
 1- Map multiple Wcf endpoints/contracts/hosts to a single replica. 
