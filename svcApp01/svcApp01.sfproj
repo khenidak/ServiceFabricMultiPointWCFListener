@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Service Fabric Tools\Microsoft.VisualStudio.Azure.Fabric.ApplicationProject.props" />
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>dad091a9-df65-4944-af46-c661d143a867</ProjectGuid>
+    <ProjectVersion>0.7</ProjectVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="ApplicationManifest.xml" />
+    <None Include="PublishProfiles\Local.xml" />
+    <None Include="Scripts\Create-FabricApplication.ps1" />
+    <None Include="Scripts\Deploy-FabricApplication.ps1" />
+    <None Include="Scripts\Get-FabricApplicationStatus.ps1" />
+    <None Include="Scripts\Utilities.psm1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\svc01\svc01.csproj" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Service Fabric Tools\Microsoft.VisualStudio.Azure.Fabric.ApplicationProject.targets" />
+</Project>
